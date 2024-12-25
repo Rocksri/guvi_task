@@ -1,0 +1,32 @@
+.arrow-container {
+    display: flex;
+    justify-content: space-around;
+    /* Space buttons evenly */
+}
+
+.arrow-button {
+    width: 50px;
+    /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow-left {
+    background-color: #ccc;
+    /* Grey background */
+}
+
+.arrow-right {
+    background-color: #ff6347;
+    /* Orange background */
+}
+
+.arrow-icon {
+    font-size: 24px;
+    /* Adjust size as needed */
+    color: white;
+}
