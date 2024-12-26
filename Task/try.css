@@ -1,32 +1,30 @@
 .arrow-container {
-    display: flex;
-    justify-content: space-around;
-    /* Space buttons evenly */
-}
-
-.arrow-button {
-    width: 50px;
-    /* Adjust size as needed */
-    height: 50px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    /* Center vertically */
 }
 
-.arrow-left {
-    background-color: #ccc;
-    /* Grey background */
+.left-arrow {
+    background-color: #eee;
+    /* Light gray background */
+    border: 1px solid #ccc;
+    /* Light gray border */
+    rotate: 180deg;
 }
 
-.arrow-right {
+.right-arrow {
     background-color: #ff6347;
     /* Orange background */
+    border: 1px solid #e65c3b;
+    /* Darker orange border */
 }
 
-.arrow-icon {
+.arrow {
     font-size: 24px;
-    /* Adjust size as needed */
-    color: white;
+    color: #fff;
+    /* White arrow color */
 }
