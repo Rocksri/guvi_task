@@ -1,30 +1,16 @@
-.arrow-container {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    /* Center vertically */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.left-arrow {
-    background-color: #eee;
-    /* Light gray background */
-    border: 1px solid #ccc;
-    /* Light gray border */
-    rotate: 180deg;
+html,
+body {
+    width: 100%;
+    height: 100%;
 }
 
-.right-arrow {
-    background-color: #ff6347;
-    /* Orange background */
-    border: 1px solid #e65c3b;
-    /* Darker orange border */
-}
-
-.arrow {
-    font-size: 24px;
-    color: #fff;
-    /* White arrow color */
+body {
+    justify-content: center;
+    align-items: center;
 }
