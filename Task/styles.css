@@ -16,6 +16,86 @@ body {
     align-items: center !important;
 }
 
+
+@media (max-width: 1024px) {
+    html {
+        padding: 0;
+    }
+
+    body {
+        padding: 0 50px 0px;
+    }
+
+    .main_content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .left_container {
+        width: 80%;
+        text-align: center;
+    }
+
+    .right_container {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .bottom_container {
+        margin: 0 50px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 20px 0px;
+    }
+
+    .main_content {
+        gap: 30px;
+    }
+
+    .left_container h2 {
+        font-size: 3rem;
+    }
+
+    .left_container p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .bottom_container {
+        margin: 0 20px;
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 10px 0px;
+    }
+
+    .main_content {
+        gap: 20px;
+    }
+
+    .left_container h2 {
+        font-size: 2.5rem;
+    }
+
+    .left_container p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .bottom_container {
+        margin: 0 10px;
+        width: 98%;
+    }
+}
+
+
 .flex {
     display: flex;
 }
@@ -58,7 +138,7 @@ body {
 
 .section {
     width: 100%;
-    padding: 50px 350px;
+    padding: 75px 350px;
 }
 
 .section-1 {
@@ -661,6 +741,10 @@ body {
                         max-width: 100%;
                         object-fit: cover;
                     }
+
+                    .Rome_Italty {
+                        border-radius: 10px;
+                    }
                 }
 
                 .sub_cnts2 {
@@ -775,11 +859,17 @@ body {
 .section-5 {
     background-color: #F7F8FC;
     height: 100%;
-    align-content: center;
+    padding: 120px 350px;
 
+    img {
+        width: 170px;
+        height: 190px;
+        position: relative;
+        top: -15%;
+        right: 3%;
+    }
     .main_container_5 {
-        flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
         height: 356px;
         .main_content_1 {
@@ -842,10 +932,15 @@ body {
         }
 
         .main_content_2 {
-            flex-direction: row-reverse;
-            align-self: flex-start;
+            flex-direction: row;
+            margin-top: 1%;
+
+            .main_content_over {
+                position: relative;
+                top: 10%;
+            }
             .over_lay_box {
-                position: absolute;
+                position: relative;
                 flex-direction: column;
                 justify-content: space-evenly;
                 padding-left: 35px;
@@ -870,24 +965,36 @@ body {
                         color: #666666;
                     }
                 }
+
+                img {
+                    width: 70px;
+                    height: 70px;
+                    position: absolute;
+                    top: -15%;
+                    right: 92%;
+                }
             }
 
             .box_under {
-                position: relative;
-                right: -10%;
+                position: absolute;
                 width: 504px;
                 height: 245px;
                 background-color: #4e4e730c;
+                border: 2px solid #6666661a;
                 border-radius: 10px;
-                top: 25%;
-            }
+                top: 24%;
+                right: -10%;
 
-            .face_img {
-                width: 68px;
-                height: 68px;
-                position: absolute;
-                right: 48%;
-                top: 22%;
+                h3 {
+                    margin-top: 35%;
+                    padding-left: 20px;
+                    font-size: 18px;
+                    color: #222222;
+                }
+                span {
+                    padding-left: 20px;
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -1023,6 +1130,24 @@ body {
 
 .section-7 {
     background: linear-gradient(to top, #F7F8FC 75%, #F7F8FC 75%, white 25%, white 25%);
+    justify-content: center;
+
+    img[alt="tree_2"] {
+        position: relative;
+        width: 110px;
+        height: 110px;
+        right: 10%;
+        top: 1%;
+    }
+
+
+    .half_cricle {
+        position: absolute;
+        width: 470px;
+        height: 360px;
+        right: 57.5%;
+        top: 35%;
+    }
 
     .main_container_7 {
         flex-direction: column;
@@ -1052,20 +1177,6 @@ body {
                 }
             }
 
-            /* .imgs {
-                position: absolute;
-                width: 80%;
-                height: 100%;
-                justify-content: space-between;
-                img {
-                    width: 480px;
-                    height: 361px;
-                }
-               .img2 {
-                    width: 120px !important;
-                    height: 120px !important;
-                }
-            } */
 
             .email_box {
                 width: 674px;
@@ -1075,6 +1186,7 @@ body {
                 justify-content: space-between;
                 align-items: center;
                 padding: 1%;
+                position: relative;
 
                 .text_email {
                     width: 30%;
