@@ -17,83 +17,7 @@ body {
 }
 
 
-@media (max-width: 1024px) {
-    html {
-        padding: 0;
-    }
 
-    body {
-        padding: 0 50px 0px;
-    }
-
-    .main_content {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .left_container {
-        width: 80%;
-        text-align: center;
-    }
-
-    .right_container {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .bottom_container {
-        margin: 0 50px;
-        width: 90%;
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        padding: 0 20px 0px;
-    }
-
-    .main_content {
-        gap: 30px;
-    }
-
-    .left_container h2 {
-        font-size: 3rem;
-    }
-
-    .left_container p {
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-    }
-
-    .bottom_container {
-        margin: 0 20px;
-        width: 95%;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 0 10px 0px;
-    }
-
-    .main_content {
-        gap: 20px;
-    }
-
-    .left_container h2 {
-        font-size: 2.5rem;
-    }
-
-    .left_container p {
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .bottom_container {
-        margin: 0 10px;
-        width: 98%;
-    }
-}
 
 
 .flex {
@@ -126,14 +50,39 @@ body {
 }
 
 .container {
-    width: 1920px;
-    /* Fixed width */
     height: 100vh;
     /* Full viewport height for scrollable content */
-    max-height: 5875px;
-    /* Prevent overflow */
     overflow-y: auto;
     flex-direction: column;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 1200px) {
+    .section {
+        padding: 75px 100px !important;
+        /* Reduce horizontal padding */
+    }
+}
+
+@media (max-width: 992px) {
+    .section {
+        padding: 50px 75px !important;
+        /* Further reduce padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 30px 50px !important;
+        /* Adjust padding for tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .section {
+        padding: 20px 20px !important;
+        /* Minimal padding for smaller screens */
+    }
 }
 
 .section {
@@ -142,7 +91,6 @@ body {
 }
 
 .section-1 {
-    /* height: 17%; */
     background-color: #FEFCFB;
 
     .discover_btn {
@@ -233,9 +181,8 @@ body {
                 .left_content {
                     height: 100%;
                     flex-direction: column !important;
-
+                    justify-content: space-around;
                     h2 {
-                        margin: 5.5rem 0 1rem;
                         font-size: 64px;
 
                         .highlight {
@@ -251,15 +198,14 @@ body {
             }
 
             .right_container {
+                width: 50%;
                 .flight_human {
                     flex-direction: column;
 
-                    .flight_human {
-                        width: 100%;
-                        height: 100%;
-                    }
                     .Human {
                         align-self: center;
+                        width: 100%;
+                        height: 100%;
                     }
                 }
 
@@ -387,7 +333,6 @@ body {
 
 
 .section-2 {
-    /* height: 12.32%; */
     background-color: #F5F9FF;
 
 
@@ -432,6 +377,13 @@ body {
             margin-top: 70px;
             align-items: center;
             justify-content: center;
+            position: relative;
+
+            img[alt="sign_up_l"] {
+                position: absolute;
+                /* background-color: #222222; */
+                right: 70%;
+            }
             .box_content {
                 width: 370px;
                 height: 278px;
@@ -443,6 +395,7 @@ body {
                 justify-content: space-around;
                 padding: 20px;
 
+                background-image: url('./asset/sign_up_l.png');
                 img {
                     width: 50px;
                     height: 50px;
@@ -456,7 +409,6 @@ body {
 
 
 .section-3 {
-    /* height: 16.34%; */
     background-color: #FEFCFB;
 
     .main_container_3 {
@@ -667,10 +619,6 @@ body {
     }
 }
 
-/* .section-4 {
-    height: 15.2%;
-    background-color: #017374;
-} */
 
 
 .section-4 {
@@ -704,11 +652,11 @@ body {
                     text-align: center;
                 }
             }
-            img {
-                align-self: flex-end;
-                margin-right: 18%;
-                margin-top: -10%;
-            }
+
+            background-image: url('./asset/tree.png');
+            background-repeat: no-repeat;
+            background-position-x: 83.5%;
+            background-position-y: 10%;
         }
 
         .main_content_2 {
@@ -861,6 +809,12 @@ body {
     height: 100%;
     padding: 120px 350px;
 
+
+    background-image: url('./asset/flight_pg5.png');
+    background-repeat: no-repeat;
+    background-position-x: 83.5%;
+    background-position-y: 10%;
+
     img {
         width: 170px;
         height: 190px;
@@ -869,7 +823,7 @@ body {
         right: 3%;
     }
     .main_container_5 {
-        justify-content: space-between;
+        justify-content: space-evenly;
         width: 100%;
         height: 356px;
         .main_content_1 {
@@ -933,7 +887,6 @@ body {
 
         .main_content_2 {
             flex-direction: row;
-            margin-top: 1%;
 
             .main_content_over {
                 position: relative;
@@ -982,7 +935,7 @@ body {
                 background-color: #4e4e730c;
                 border: 2px solid #6666661a;
                 border-radius: 10px;
-                top: 24%;
+                top: 22%;
                 right: -10%;
 
                 h3 {
@@ -1000,14 +953,9 @@ body {
     }
 }
 
-/* .section-6 {
-    height: 13.71%;
-    background-color: #2374ab;
-} */
 
 
 .section-6 {
-    /* height: 13.71%; */
     background-color: #FEFCFB;
 
     .main_container_6 {
@@ -1123,10 +1071,6 @@ body {
     }
 }
 
-/* .section-7 {
-    height: 15.29%;
-    background-color: #f64b3c;
-} */
 
 .section-7 {
     background: linear-gradient(to top, #F7F8FC 75%, #F7F8FC 75%, white 25%, white 25%);
@@ -1169,6 +1113,9 @@ body {
             justify-content: space-evenly;
             align-items: center;
 
+            background-image: url('./asset/half_cricle.png');
+            background-repeat: no-repeat;
+            background-position-y: 100%;
             .subscribe_box {
                 h1 {
                     color: #FFFFFF;
